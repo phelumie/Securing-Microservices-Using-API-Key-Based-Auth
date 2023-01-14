@@ -31,9 +31,8 @@ public class Controller {
     @PostMapping("api-key")
     public ResponseEntity<String> requestApiKey(@RequestBody String email){
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(10);
-//        System.out.println("aaaaaaaaaaa "+encoder.matches("myPassword",result));
+
         String apiKey= generateApiKey(40);
-//        String apikey= encoder.encode(apiKey);
 
         while (bloomService.checkIfExistsApiKey(apiKey))
             apiKey= generateApiKey(40);
