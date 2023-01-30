@@ -37,10 +37,10 @@ createdDate: date when the API key was created
 ```
 
 ## Dependencies
-Spring Web 
-Spring cloud gateway
-Spring Redis ORM
-Lombok
+* Spring Web 
+* Spring cloud gateway
+* Spring Redis ORM
+* Lombok
 
 
 ## Contributing
