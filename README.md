@@ -36,23 +36,17 @@ services: set of services that the API key has access to
 createdDate: date when the API key was created
 ```
 
-Dependencies
+## Dependencies
 Spring Web 
 Spring cloud gateway
 Spring Redis ORM
 Lombok
 
-## Tags
-#API-key-based-auth #Spring-Boot #Redis #ORM
 
-Contributing
-To contribute to the project, create a fork of the repository and submit a pull request.
-
-License
+## Contributing
+If you are interested in contributing to this project, feel free to submit a pull request. Your contributions are always welcome. 
+## License
 This project is licensed under the MIT License.
 
-Getting started
-To run the project, clone the repository and build the project using the following command:
-
-Copy code
-mvn clean install
+## Tags
+#API-key-based-auth #Spring-Boot #Redis #ORM
