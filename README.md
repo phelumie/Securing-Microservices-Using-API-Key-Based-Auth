@@ -19,6 +19,40 @@ A simple implementation of API Key based authentication for microservices using 
 * If the API key provided is not present in the database, an Unauthorized Exception is also thrown with a message: ```Please provide a valid API key.``` 
 * If the API key is found but does not have access to the requested service, an Unauthorized Exception is thrown with a message: ```You are unauthorized to use this service.```
 
-
-
+## Technical Details 
 The authentication model for this project consists of the following fields:
+``` 
+private String key;
+private String UserId;
+private boolean isAccountActivated;
+private Set<String> services;
+private Date createdDate; 
+```
+```
+key: API key
+UserId: User Id associated with the API key
+isAccountActivated: flag indicating if the user account is activated
+services: set of services that the API key has access to
+createdDate: date when the API key was created
+```
+
+Dependencies
+Spring Web 
+Spring cloud gateway
+Spring Redis ORM
+Lombok
+
+## Tags
+#API-key-based-auth #Spring-Boot #Redis #ORM
+
+Contributing
+To contribute to the project, create a fork of the repository and submit a pull request.
+
+License
+This project is licensed under the MIT License.
+
+Getting started
+To run the project, clone the repository and build the project using the following command:
+
+Copy code
+mvn clean install
